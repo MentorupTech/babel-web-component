@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('custom-click', (event) => {
+            debugger;
+            console.log(event.detail);
+            debugger;
+        });
+    </script>
+</head>
+<body>
+    <template id="notification">
+        <style>
+
+            .true {
+                display: block;
+            }
+
+            .false {
+                display: none;
+            }
+        
+        </style>
+        <section>
+            bodycomponent
+        </section>
+    </template>
+    <template id="button">
+        <button>click</button>
+    </template>
+    <button-notification>
+    </button-notification>
+    <component-notification is-visible="false"></component-notification>
+    <script src="index.js"></script>
+</body>
+</html>
